@@ -28,7 +28,6 @@
 .page__body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -143,22 +142,6 @@
   padding-bottom: 40px;
   line-height: 21px;
 }
-.city-list {
-  margin: 0 auto;
-  width: 280px;
-  list-style: none;
-  padding: 28px 30px 35px 21px;
-}
-.city-list__item {
-  margin: 0 0 20px;
-}
-.city-list__title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  color: #000000;
-  margin: 0;
-}
 .advantages__item {
   background-color: #eeeeee;
 }
@@ -207,6 +190,22 @@
   background-image: url("../img/map-marker.svg");
   background-size: 27px 27px;
   background-repeat: no-repeat;
+}
+.city-list {
+  margin: 0 auto;
+  width: 280px;
+  list-style: none;
+  padding: 28px 30px 35px 21px;
+}
+.city-list__item {
+  margin: 0 0 20px;
+}
+.city-list__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
 }
 .page-footer {
   padding-top: 16px;
