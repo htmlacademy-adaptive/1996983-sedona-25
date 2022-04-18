@@ -1,12 +1,53 @@
 .city-list {
-  margin: 0 auto;
-  width: 280px;
   list-style: none;
+  width: 270px;
+  margin: 0 auto;
   padding: 28px 30px 35px 21px;
+  text-transform: uppercase;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    padding: 60px 0 45px;
+  }
+
+  @media @desktop {
+    justify-content: space-around;
+    padding-bottom: 63px;
+    padding-top: 60px;
+  }
 }
 
 .city-list__item {
   margin: 0 0 20px;
+
+  &--house {
+    background-image: url("../img/icon-house.svg");
+    background-size: 40px 36px;
+  }
+
+  &--gift {
+    background-image: url("../img/icon-gift.svg") no-repeat;
+    background-size: 40px 37px;
+  }
+
+  &--burger {
+    background: url("../img/icon-burger.svg")  no-repeat;
+    background-size: 37px 37px;
+  }
+
+  @media @tablet {
+    margin-bottom: 0;
+    width: 33.3%;
+  }
+}
+
+.city-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .city-list__title {
@@ -15,4 +56,33 @@
   line-height: 26px;
   color: @font-color-heading;
   margin: 0;
+  padding-top: 7px;
+  padding-bottom: 15px;
+
+  @media @tablet {
+    padding-top: 100px;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 21px;
+  }
+
+  @media @desktop {
+    font-size: 21px;
+    padding-top: 100px;
+  }
+}
+
+.city-list__text {
+  margin: 0;
+  padding-left: 50px;
+  line-height: 21px;
+  color: @font-color-base;
+
+  @media @tablet {
+    padding: 22px 30px 16px;
+  }
+
+  @media @desktop {
+    padding: 20px 50px;
+  }
 }
