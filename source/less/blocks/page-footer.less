@@ -1,6 +1,32 @@
 .page-footer {
-  padding-top: 16px;
-  padding-bottom: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @tablet {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media @desktop {
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
+}
+
+.page-footer__wrapper {
+  @media @tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  @media @desktop {
+    margin: 0 40px;
+    justify-content: space-between;
+  }
 }
 
 .page__footer__visit {
@@ -8,10 +34,16 @@
   font-size: 21px;
   font-weight: 700;
   color: @font-color-heading;
+
+  @media @desktop {
+    text-align: center;
+    padding-left: 46px;
+  }
 }
 
 .social__list {
   list-style-type: none;
+  display: flex;
 }
 
 .social__link {
