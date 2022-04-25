@@ -1,7 +1,63 @@
+.photo {
+  border-top: solid 1px #cecece;
+
+  @media @tablet {
+    border: none;
+  }
+}
+
+.photo-wrapper {
+  margin: 0 auto;
+
+  @media @tablet {
+    width: calc(648px);
+  }
+
+  @media @desktop {
+    width: calc(1200px);
+  }
+}
+
+.photo-box {
+  margin: 0 auto;
+  padding: 0;
+
+  @media @tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media @desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .photo__description {
-  padding-top: 15px;
-  line-height: 24px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 25px;
   list-style-type: none;
+  border-bottom: solid 1px @border-color-photo;
+
+  @media @tablet {
+    width: 324px;
+    border: none;
+    background-color: @border-color-photo;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  @media @desktop {
+    width: 400px;
+  }
+}
+
+.photo__description--big {
+  @media @tablet {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
 }
 
 .photo__image {
@@ -15,11 +71,15 @@
   font-size: 14px;
   font-weight: 700;
   color: @font-color-heading;
+  text-align: start;
+  padding-top: 15px;
 }
 
 .photo__author {
   margin: 0;
   text-transform: none;
+  padding-bottom: 3px;
+  text-align: start;
 }
 
 .photo__likesum {

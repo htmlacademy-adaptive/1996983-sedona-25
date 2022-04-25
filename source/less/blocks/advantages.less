@@ -64,7 +64,8 @@
 
 .content-item__image {
   margin: 0;
-  width: auto;
+  width: 100%;
+  height: 256px;
 
   &--city {
     background-image: url("../img/image-city.jpg");
@@ -74,8 +75,37 @@
 
   &--bridge {
     background-image: url("../img/image-bridge.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media @tablet {
+    &--city {
+      background-image: url("../img/image-city-tablet.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--bridge {
+      background-image: url("../img/image-bridge-tablet.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media @desktop {
+      &--city {
+        background-image: url("../img/image-city-desktop.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+
+      &--bridge {
+        background-image: url("../img/image-bridge-desktop.jpg");
+      }
+    }
   }
 }
+
 
 .no-content-item {
   background-color: @bg-color-map;
