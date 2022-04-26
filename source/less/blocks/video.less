@@ -1,6 +1,19 @@
-.video-header {
-  padding-top: 33px;
-  padding-bottom: 34px;
+.video__header {
+  padding-top: 17px;
+  padding-bottom: 36px;
+  width: 266px;
+  margin: 0 auto;
+
+  @media @tablet {
+    width: 445px;
+    padding-top: 58px;
+    padding-bottom: 66px;
+  }
+
+  @media @desktop {
+    padding-top: 62px;
+    padding-bottom: 64px;
+  }
 }
 
 .video__title {
@@ -9,8 +22,14 @@
   font-weight: 700;
   line-height: 26px;
   color: @font-color-heading;
+  padding-bottom: 20px;
+
+  @media @tablet {
+    font-size: 30px;
+  }
 }
 
 .video__text {
   line-height: 24px;
+  margin: 0;
 }
