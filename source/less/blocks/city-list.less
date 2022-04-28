@@ -2,23 +2,66 @@
   list-style: none;
   width: 270px;
   margin: 0 auto;
-  padding: 28px 30px 35px 21px;
+  padding: 23px 0 52px;
   text-transform: uppercase;
 
   @media @tablet {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    min-width: 0;
+    width: 90%;
+    max-width: 768px;
     height: auto;
-    padding: 60px 0 45px;
+    padding: 60px 0;
   }
 
   @media @desktop {
-    justify-content: space-around;
     padding-bottom: 63px;
     padding-top: 60px;
+    width: 88%;
+    max-width: 1200px;
+  }
+}
+
+.city-list__item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 22px;
+
+  &--house {
+    background: url("../img/icon-house.svg") no-repeat;
+    background-size: 40px 40px;
+  }
+
+  &--burger {
+    background: url("../img/icon-burger.svg") no-repeat;
+    background-size: 40px 40px;
+  }
+
+  &--gift {
+    background: url("../img/icon-gift.svg") no-repeat;
+    background-size: 40px 40px;
+  }
+
+  @media @tablet {
+    padding: 0;
+    margin: 0;
+    width: 33.3%;
+
+    &--house {
+      background-size: 75px 70px;
+      background-position: 50% 0%;
+    }
+
+    &--burger {
+      background-size: 76px 68px;
+      background-position: 50% 0%;
+    }
+
+    &--gift {
+      background-size: 64px 75px;
+      background-position: 50% 0%;
+    }
   }
 }
 
@@ -30,32 +73,27 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
-  color: @font-color-heading;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 15px;
+  padding: 0;
+  padding-bottom: 16px;
+  text-align: start;
 
   @media @tablet {
-    padding-top: 100px;
-    padding-bottom: 0;
-    padding-left: 0;
     font-size: 21px;
-  }
-
-  @media @desktop {
-    font-size: 21px;
+    text-align: center;
     padding-top: 100px;
   }
 }
 
 .city-list__text {
   margin: 0;
-  padding-left: 50px;
   line-height: 21px;
   color: @font-color-base;
+  text-align: start;
 
   @media @tablet {
     padding: 22px 30px 16px;
+    text-align: center;
   }
 
   @media @desktop {

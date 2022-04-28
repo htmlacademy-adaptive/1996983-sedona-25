@@ -2,8 +2,22 @@
   position: relative;
   min-height: 350px;
   background-color: @bg-color-map;
-  background-image: url("../img/map-mobile.jpg");
   background-position: center;
+  width: 100%;
+  background-image: url("../img/map-mobile.jpg");
+
+  @media @tablet {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media @desktop {
+    background-image: url("../img/map-desktop.jpg");
+  }
+}
+
+.map iframe {
+  border: none;
+  display: block;
 }
 
 .map__marker {

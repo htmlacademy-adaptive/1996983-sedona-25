@@ -5,8 +5,8 @@
   margin: 0 auto;
 
   @media @tablet {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 
   @media @desktop {
@@ -18,39 +18,98 @@
 .page-footer__wrapper {
   @media @tablet {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  @media @desktop {
-    margin: 0 40px;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 86%;
+    max-width: 960px;
   }
 }
 
-.page__footer__visit {
-  width: 138px;
-  font-size: 21px;
+.page-footer__visit {
   font-weight: 700;
-  color: @font-color-heading;
-
-  @media @desktop {
-    text-align: center;
-    padding-left: 46px;
-  }
+  font-size: 21px;
+  text-decoration: none;
+  color: @black;
 }
 
 .social__list {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
 }
 
 .social__link {
-  justify-content: center;
-  align-items: center;
-  width: 42px;
-  height: 44px;
-  border: 2px solid @bg-color-button;
+  min-height: 46px;
+  width: 47px;
+  display: inline-block;
   background-color: @bg-color-button;
+  vertical-align: middle;
+  margin-left: 6px;
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+
+  &--telegram {
+    background-image: url("../img/icon-telegram.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+
+  &:hover {
+    background-color: @bg-color-button-hover;
+  }
+
+  &:active {
+    background-color: @bg-color-button-active;
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: @black;
+  margin: 7px 0;
+  margin-right: 13px;
+}
+
+.copyright__logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.copyright__icon:hover,
+.copyright__text:hover {
+  fill: @bg-color-button;
+  color: @bg-color-button;
+}
+
+.copyright__icon:active,
+.copyright__text:active {
+  fill: @bg-color-copyright-active;
+  color: @bg-color-copyright-active;
 }
