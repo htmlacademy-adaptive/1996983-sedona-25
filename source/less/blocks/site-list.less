@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-between;
     width: 90%;
   }
 }
@@ -24,16 +23,35 @@
   @media @tablet {
     border: none;
     color: @black;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media @desktop {
+    padding: 14px 60px;
   }
 }
 
-.site-list__item:hover {
-  background: @bg-color-button-hover;
-}
+.site-list__item {
+  &:hover {
+    background: @bg-color-button-hover;
+  }
 
-.site-list__item:active {
-  background: @bg-color-button-hover;
-  opacity: 0.3;
+  &:active {
+    background: @bg-color-button-hover;
+    opacity: 0.3;
+  }
+
+  @media @tablet {
+    &:nth-child(4n+3) {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:active {
+      background: none;
+    }
+  }
 }
 
 
