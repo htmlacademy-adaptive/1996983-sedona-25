@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy:Фото</title>
   <link href="./css/style.css" rel="stylesheet">
-</head>
-<body class="page__body">
-  <div class="page-border">
-    <header class="page-header">
-      <a class="page-header__logo">
+  </head>
+  <body class="page__body">
+    <div class="page-border">
+      <header class="page-header">
+        <a class="page-header__logo">
         <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седона"></a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle-off" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#">Фото и видео</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-        </div>
-      </nav>
-    </header>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Фото и видео</a>
+              </li>
+              <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <main class="page-main">
       <div class="main-image">
         <img class="main-image__text" src="./img/sedona.svg" alt="Добро пожаловать в Седону">
         <picture>
-          <source media="(min-width:1200px)" srcset="#">
-          <source media="(min-width: 768px)" srcset="#">
-          <img class="main-image__triangle" src="../source/img/triangle.svg" alt="Разделитель">
+          <source media="(min-width:1200px)" srcset="./img/triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/triangle-tablet.svg">
+          <img class="main-image__triangle" src="./img/triangle.svg" alt="Разделитель">
         </picture>
       </div>
       <section class="intro intro--photo">
@@ -51,83 +51,117 @@
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
-        <div class="photo-wrapper">
-          <ul class="photo-box">
-            <li class="photo__description photo__description--big">
+          <div class="photo-wrapper">
+            <ul class="photo-box">
+              <li class="photo__description photo__description--big">
               <picture>
+                <source media="(min-width:1200px)" srcset="./img/photo-sunset-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet.jpg">
                 <img class="photo__image" src="./img/photo-sunset.jpg" alt="Народные просторы">
               </picture>
+              <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Неродные просторы</p>
                   <p class="photo__author">Автор фото: Борис</p>
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
                   <span class="photo__sum">1350</span>
                 </div>
-            </li>
-            <li class="photo__description">
+                </div>
+              </li>
+              <li class="photo__description">
               <picture>
+                <source media="(min-width:1200px)" srcset="./img/photo-cactus-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet.jpg">
                 <img class="photo__image" src="./img/photo-cactus.jpg" alt="Местная растительность">
               </picture>
+              <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Местная растительность</p>
                   <p class="photo__author">Автор фото: Сергей</p>
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
                   <span class="photo__sum">143</span>
                 </div>
+                </div>
               </li>
-            <li class="photo__description">
+              <li class="photo__description">
               <picture>
+                <source media="(min-width:1200px)" srcset="./img/photo-roads-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet.jpg">
                 <img class="photo__image" src="./img/photo-roads.jpg" alt="Дорога на север">
               </picture>
+              <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Дорога на север</p>
                   <p class="photo__author">Автор фото: Петр</p>
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
                   <span class="photo__sum">96</span>
                 </div>
-            </li>
-            <li class="photo__description">
+                </div>
+              </li>
+              <li class="photo__description">
               <picture>
+                <source media="(min-width:1200px)" srcset="./img/photo-bridge-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet.jpg">
                 <img class="photo__image" src="./img/photo-bridge.jpg" alt="Мост дьявола">
               </picture>
+              <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Мост дьявола</p>
                   <p class="photo__author">Автор фото: Антон</p>
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
                   <span class="photo__sum">254</span>
                 </div>
-            </li>
-          </ul>
-        </div>
+                </div>
+              </li>
+            </ul>
+          </div>
       </section>
       <section class="video">
         <h2 class="visually-hidden">Видео Седоны</h2>
-        <header class="video__header">
-          <p class="video__title">Все еще сомневаетесь?</p>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-          </p>
-        </header>
-        <div class="video__video-pleer">
-          <picture>
-            <img src="./img/video.jpg" alt="Видео">
-          </picture>
-        </div>
+          <header class="video__header">
+            <p class="video__title">Все еще сомневаетесь?</p>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+          </header>
+          <div class="video__video-pleer">
+            <picture>
+              <source media="(min-width:1200px)" srcset="./img/video-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg">
+              <img src="./img/video.jpg" alt="Видео">
+            </picture>
+          </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -139,25 +173,32 @@
           <span class="visually-hidden">Давайте дружить!</span>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Мы в Твиттере</span></a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy_sales">
+                <span class="visually-hidden">Мы в Телеграме</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Мы в Ютубе</span></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <span class="visually-hidden">Мы в Ютубе</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text"> Разработано</b>
-          <a class="copyright__logo" href="#">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text"> Разработано</span>
+            <span class="visually-hidden">HTML Academy </span>
+            <svg class="copyright__icon" width="36" height="36" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.13 2h-.09L4 3.2v21L16.04 31 28 24.2v-21L16.13 2ZM26.3 12.29 16.04 6.51v-.09h-.08l-.1-.08v.08L5.7 12.3V4.64l10.26-1.02L26.3 4.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM5.7 14.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L5.7 23.26v-8.42Z" />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
-  </div>
-</body>
+    </div>
+  </body>
 </html>

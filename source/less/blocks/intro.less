@@ -54,6 +54,16 @@
   &--form {
     padding-top: 38px;
     padding-bottom: 16px;
+
+    @media @tablet {
+      padding-top: 64px;
+      padding-bottom: 102px;
+    }
+
+    @media @desktop {
+      padding-top: 115px;
+      padding-bottom: 66px;
+    }
   }
 }
 
@@ -64,6 +74,10 @@
   line-height: 26px;
   color: @font-color-heading;
   padding-bottom: 27px;
+
+  @media @tablet {
+    font-size: 30px;
+  }
 }
 
 .intro__text {
