@@ -1,29 +1,55 @@
 .main-image__text {
   display: block;
   margin: 0 auto;
-  width: 280px;
-  padding-top: 80px;
+  width: 282px;
+  padding-top: 90px;
 
   @media @tablet {
-    width: 460px;
+    width: 461px;
+    padding-top: 77px;
   }
 }
 
 .main-image {
   position: relative;
-  width: 100%;
-  min-height: 389px;
+  width: auto;
+  min-height: 214px;
+  margin: 0 auto;
   background-color: @bg-color-back;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-image: url("../img/back-tablet.jpg");
+  background-image: url("../img/back-mobile.jpg");
 
-  @media @tablet {
-    background-image: url("../img/back-tablet.jpg");
+  &--index {
+    min-height: 389px;
+    background-position: center top;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
   @media @tablet {
+    min-height: 290px;
+    background-size: cover;
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+
+    &--index {
+      min-height: 518px;
+    }
+  }
+
+  @media @desktop {
     background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
