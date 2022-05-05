@@ -4,14 +4,29 @@
   background-color: @bg-color-map;
   background-position: center;
   width: 100%;
+  background-size: cover;
   background-image: url("../img/map-mobile.jpg");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
   @media @tablet {
+    background-size: cover;
     background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
   }
 
   @media @desktop {
+    background-size: cover;
     background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }
 
