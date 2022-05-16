@@ -1,7 +1,7 @@
 .interest {
   margin: 0 auto;
   text-align: center;
-  padding-top: 39px;
+  padding-top: 42px;
   padding-bottom: 49px;
   max-width: 284px;
 
@@ -13,7 +13,7 @@
   }
 
   @media @desktop {
-    padding-top: 61px;
+    padding-top: 59px;
     padding-bottom: 66px;
   }
 }
@@ -21,17 +21,32 @@
 .interest__title {
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 18px;
   color: @font-color-heading;
-  margin: 0 0 21px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media @tablet {
+    font-size: 30px;
+    padding-bottom: 35px;
+  }
 }
 
 .interest__text {
   line-height: 24px;
   margin: 0;
+  padding-bottom: 30px;
+
+  @media @tablet {
+    padding-bottom: 38px;
+
+    @media @desktop {
+      padding-bottom: 45px;
+    }
+  }
 }
 
 .interest__link {
   padding: 16px;
-  margin-top: 72px;
+  margin-top: 0;
 }

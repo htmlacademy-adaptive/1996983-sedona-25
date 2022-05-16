@@ -58,9 +58,9 @@
         <div class="advantages__wrapper advantages__wrapper--city">
           <div class="advantages__item content-item">
             <header class="content-item__header">
-            <h3 class="content-item__title content-item__title--main">Настоящий городок</h3>
+            <h3 class="content-item__title">Настоящий городок</h3>
               <p class="content-item__number">— №1 —</p>
-              <p class="content-item__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="content-item__text">Седона не аттракцион&nbsp;для туристов, там течет&nbsp;своя жизнь</p>
             </header>
           </div>
           <header class="content-item__image">
@@ -75,29 +75,49 @@
           </header>
         </div>
           <ul class="content-item__city-list city-list">
-            <li class="city-list__item city-list__item--house">
+            <li class="city-list__item">
+              <div class="city-list__item-title">
+              <svg class="city-list__item-icon" width="40" height="40" viewBox="0 0 40 40">
+              <use xlink:href="img/sprite.svg#icon-house"></use>
+              </svg>
               <h3 class="city-list__title">Жилье</h3>
-              <p class="city-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+              <p class="city-list__text">Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
             </li>
-            <li class="city-list__item city-list__item--burger">
+            <li class="city-list__item">
+              <div class="city-list__item-title">
+              <svg class="city-list__item-icon" width="40" height="40" viewBox="0 0 40 40">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
               <h3 class="city-list__title">Еда</h3>
-              <p class="city-list__text">Всегда заказывайте фирменный бурген, Вы не разочаруетесь!</p>
+              </div>
+              <p class="city-list__text">Всегда заказывайте фирменный бургер, <br> Вы не разочаруетесь!</p>
             </li>
-            <li class="city-list__item city-list__item--gift">
+            <li class="city-list__item">
+              <div class="city-list__item-title">
+              <svg class="city-list__item-icon" width="40" height="40" viewBox="0 0 40 40">
+              <use xlink:href="img/sprite.svg#icon-gift"></use>
+              </svg>
               <h3 class="city-list__title">Сувениры</h3>
-              <p class="city-list__text">Не только китайского, но и местного производства!</p>
+              </div>
+              <p class="city-list__text">Не только китайского, <br> но и местного производства!</p>
             </li>
           </ul>
           <div class="advantages__wrapper advantages__wrapper--bridge">
             <div class="advantages__item content-item">
-              <header class="content-item__header">
-              <h3 class="content-item__title content-item__title--main">Там есть Мост дьявола</h3>
+              <header class="content-item__header content-item__header--main">
+              <h3 class="content-item__title content-item__title--main">Там есть <br> Мост дьявола</h3>
                 <p class="content-item__number">— №2 —</p>
                 <p class="content-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </header>
             </div>
             <header class="content-item__image">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/image-bridge-desktop.webp 1x, img/image-bridge-desktop@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/image-bridge-tablet.webp 1x, img/image-bridge-tablet@2x.webp 2x"
+                type="image/webp">
+              <source srcset="img/image-bridge-mobile.webp 1x, img/image-bridge-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1200px)"
                 srcset="img/image-bridge-desktop.jpg 1x, img/image-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -119,12 +139,12 @@
                 <header class="no-content-item__header">
                   <h3 class="content-item__title">Красивая дорога</h3>
                     <p class="content-item__number">— №4 —</p>
-                    <p class="content-item__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="content-item__text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
                 </header>
                   </div>
               <div class="advantages__item no-content-item">
                 <header class="no-content-item__header">
-                  <h3 class="content-item__title">Мало туристов</h3>
+                  <h3 class="content-item__title">Мало <br> туристов</h3>
                     <p class="content-item__number">— №5 —</p>
                     <p class="content-item__text">Большинство едет в гранд каньон и толпится там</p>
                 </header>
@@ -135,7 +155,7 @@
         <header class="interest__header">
           <h2 class="visually-hidden"> Поиск гостиницы в Седоне</h2>
           <h3 class="interest__title">Заинтересовались?</h3>
-          <p class="interest__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="interest__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
         </header>
         <a class="button interest__link" href="#">Найти гостиницу</a>
       </section>
@@ -156,26 +176,34 @@
           <ul class="social__list">
             <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span></a>
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg width="24" height="24">
+              <use :href="img/sprite.svg#logo-vk"></use>
+            </svg></a>
             </li>
             <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy_sales">
-              <span class="visually-hidden">Мы в Телеграме</span></a>
+              <span class="visually-hidden">Мы в Телеграме</span>
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#logo-telegram"></use>
+            </svg></a>
             </li>
             <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Мы в Ютубе</span></a>
+              <span class="visually-hidden">Мы в Ютубе</span>
+              <svg width="24" height="24">
+                <use xlink:href="img/sprite.svg#logo-youtube"></use>
+              </svg></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text"> Разработано</span>
             <span class="visually-hidden">HTML Academy </span>
-            <svg class="copyright__icon" width="36" height="36" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.13 2h-.09L4 3.2v21L16.04 31 28 24.2v-21L16.13 2ZM26.3 12.29 16.04 6.51v-.09h-.08l-.1-.08v.08L5.7 12.3V4.64l10.26-1.02L26.3 4.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM5.7 14.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L5.7 23.26v-8.42Z"/>
-            </svg>
+              <svg class="copyright__icon" width="27" height="35" viewBox="0 0 32 32">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              </svg>
           </a>
         </div>
       </div>
