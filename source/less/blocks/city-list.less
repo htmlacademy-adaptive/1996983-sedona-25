@@ -1,67 +1,59 @@
 .city-list {
   list-style: none;
-  width: 270px;
+  width: 284px;
   margin: 0 auto;
-  padding: 23px 0 52px;
+  padding: 32px 0 52px;
   text-transform: uppercase;
+  box-sizing: border-box;
 
   @media @tablet {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
-    max-width: 768px;
+    width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding: 60px 0 40px;
   }
 
   @media @desktop {
-    padding-bottom: 63px;
-    padding-top: 60px;
-    width: 88%;
+    padding-bottom: 60px;
+    padding-top: 55px;
+    width: 100%;
     max-width: 1200px;
   }
 }
 
 .city-list__item {
-  position: relative;
-  padding-left: 70px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 
-  &--house {
-    background: url("../img/icon-house.svg") no-repeat;
-    background-size: 40px 40px;
-  }
-
-  &--burger {
-    background: url("../img/icon-burger.svg") no-repeat;
-    background-size: 40px 40px;
-  }
-
-  &--gift {
-    background: url("../img/icon-gift.svg") no-repeat;
-    background-size: 40px 40px;
+  @media @tablet {
+    width: 33.3%;
   }
 
   @media @tablet {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 33.3%;
+  }
+}
 
-    &--house {
-      background-size: 75px 70px;
-      background-position: 50% 0%;
-    }
+.city-list__item-icon {
+  fill: @bg-color-button;
+  padding-right: 7px;
 
-    &--burger {
-      background-size: 76px 68px;
-      background-position: 50% 0%;
-    }
+  @media @tablet {
+    width: 75px;
+    height: auto;
+    margin-bottom: 26px;
+  }
+}
 
-    &--gift {
-      background-size: 64px 75px;
-      background-position: 50% 0%;
-    }
+.city-list__item-title {
+  display: flex;
+
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -81,7 +73,11 @@
   @media @tablet {
     font-size: 21px;
     text-align: center;
-    padding-top: 100px;
+    padding-bottom: 22px;
+
+    @media @desktop {
+      padding-bottom: 26px;
+    }
   }
 }
 
@@ -90,13 +86,22 @@
   line-height: 21px;
   color: @font-color-base;
   text-align: start;
+  padding-left: 47px;
+
+  & br {
+    display: none;
+  }
 
   @media @tablet {
-    padding: 22px 30px 16px;
+    padding: 0 15px 16px;
     text-align: center;
+
+    & br {
+      display: block;
+    }
   }
 
   @media @desktop {
-    padding: 20px 50px;
+    padding: 0 55px 20px;
   }
 }

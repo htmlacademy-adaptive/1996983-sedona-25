@@ -11,50 +11,84 @@
     display: flex;
     flex-direction: row;
     height: 256px;
+
+    &--bridge {
+      flex-direction: row-reverse;
+    }
   }
 }
 
 .content-item {
   background-color: @bg-color-button;
   color: @font-color-secondary;
+
+  @media @tablet {
+    width: 33.3%;
+  }
 }
 
 .content-item__header {
-  margin: 0 auto;
-  width: 282px;
-  padding: 52px 22px 42px 16px;
+  box-sizing: border-box;
+  padding: 56px 6.25% 38px;
 
   @media @tablet {
-    width: 192px;
-    padding: 46px 32px 46px 32px;
+    padding: 40px 30px 40px;
   }
 
   @media @desktop {
-    width: 295px;
-    padding: 55px 52px 58px 52px;
+    padding: 47px 55px 56px;
+  }
+
+  &--main {
+    padding: 40px 6.25% 38px;
+
+    @media @tablet {
+      padding: 43px 36px 40px;
+    }
+
+    @media @desktop {
+      padding: 51px 85px 53px;
+    }
   }
 }
 
 .content-item__title {
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   padding-bottom: 11px;
 
+  & br {
+    display: none;
+  }
+
   @media @tablet {
     font-size: 21px;
+
+    & br {
+      display: block;
+    }
   }
 
   @media @desktop {
-    padding-left: 80px;
-    padding-right: 80px;
+    max-width: 160px;
+  }
+
+  &--main {
+    @media @tablet {
+      padding-bottom: 14px;
+    }
   }
 }
 
 .content-item__number {
   margin: 0;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
+
+  @media @tablet {
+    padding-bottom: 25px;
+  }
 }
 
 .content-item__text {
@@ -64,37 +98,54 @@
 
 .content-item__image {
   margin: 0;
-  height: 256px;
+  height: 260px;
   width: 100%;
+
+  @media @tablet {
+    height: 256px;
+    width: 66.6%;
+  }
 }
 
 .content__image {
   display: block;
   width: 100%;
-  height: 256px;
+  height: 260px;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
+
+  @media @tablet {
+    height: 256px;
+  }
 }
 
 .no-content-item {
   background-color: @bg-color-map;
+  margin: 0 auto;
+  padding: 0 6.25%;
+
+  @media @tablet {
+    width: 33.3%;
+    padding: 0;
+  }
 }
 
 
 .no-content-item__header {
-  padding-top: 27px;
+  box-sizing: border-box;
+  padding-top: 24px;
   padding-bottom: 26px;
-  width: 270px;
   margin: 0 auto;
+  border-bottom: 1px solid @border-color-advantages;
+
 
   @media @tablet {
-    width: 190px;
-    margin: 0 auto;
-    padding: 45px 0 46px;
+    padding: 45px 38px 30px;
+    border: none;
   }
 
   @media @desktop {
-    width: 320px;
-    padding-top: 45px;
-    padding-bottom: 58px;
+    padding: 45px 40px 60px;
   }
 }

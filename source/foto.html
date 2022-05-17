@@ -66,9 +66,8 @@
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  <svg width="23" height="21" id="like" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
@@ -89,9 +88,8 @@
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  <svg width="23" height="21" id="like" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
@@ -112,9 +110,8 @@
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  <svg width="23" height="21" id="like" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
@@ -135,9 +132,8 @@
                 </div>
                 <div class="photo__likesum">
                   <button class="photo__like" type="button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                  <svg width="23" height="21" id="like" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite.svg#like"></use>
                   </svg>
                     <span class="visually-hidden">Нравится</span>
                   </button>
@@ -173,27 +169,34 @@
           <span class="visually-hidden">Давайте дружить!</span>
           <ul class="social__list">
             <li class="social__item">
-            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite.svg#logo-vk"></use>
+                </svg></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy_sales">
-                <span class="visually-hidden">Мы в Телеграме</span></a>
+              <a class="social__link" href="https://t.me/htmlacademy_sales">
+                <span class="visually-hidden">Мы в Телеграме</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite.svg#logo-telegram"></use>
+                </svg></a>
             </li>
             <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Мы в Ютубе</span></a>
+              <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite.svg#logo-youtube"></use>
+                </svg></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text"> Разработано</span>
             <span class="visually-hidden">HTML Academy </span>
-            <svg class="copyright__icon" width="36" height="36" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.13 2h-.09L4 3.2v21L16.04 31 28 24.2v-21L16.13 2ZM26.3 12.29 16.04 6.51v-.09h-.08l-.1-.08v.08L5.7 12.3V4.64l10.26-1.02L26.3 4.64v7.65Zm-10.34-4.5 10.26 5.7-4.02 2.2-6.33-3.57v1.2l5.26 2.97-.8.42-4.46-2.55v1.2l3.39 1.95-.72.42-2.67-1.53v1.2l1.7.93-1.61.93-10.18-5.7 10.18-5.78ZM5.7 14.83l10.17 5.78v.86l-7.05-4v1.19l7.14 4.08v.94l-7.14-4v1.19l7.14 4.08 7.22-4.17v-4.42l3.04-1.7v8.5l-10.26 5.87L5.7 23.26v-8.42Z" />
+            <svg class="copyright__icon" width="27" height="35" viewBox="0 0 32 32">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
