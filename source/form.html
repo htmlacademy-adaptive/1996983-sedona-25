@@ -15,8 +15,8 @@
       <header class="page-header">
         <a class="page-header__logo">
         <img class="page-header__logo" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона"></a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle-off" type="button">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
           <div class="main-nav__wrapper">
@@ -215,18 +215,23 @@
         </div>
       </div>
     </div>
+    </div>
 
-    <div class="modal modal--success">
-      <div class="modal__wrapper">
-        <h2 class="modal__header-title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-        </p>
-        <div class="modal__footer modal__footer--special">
-          <button class="button modal__footer-button">Закрыть окно</button>
+      <div class="modal modal--success">
+        <div class="modal__wrapper">
+          <h2 class="modal__header-title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="modal__footer modal__footer--special">
+            <button class="button modal__footer-button">Закрыть окно</button>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+
+      <div class="overlay"></div>
+
+      <script src="js/menu.min.js"></script>
+      <script src="js/modals.min.js"></script>
   </body>
 </html>
