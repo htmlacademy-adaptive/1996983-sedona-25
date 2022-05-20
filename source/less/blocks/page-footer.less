@@ -27,6 +27,14 @@
   }
 }
 
+.visit {
+  margin-bottom: 34px;
+
+  @media @tablet {
+    margin: 0;
+  }
+}
+
 .page-footer__visit {
   font-weight: 700;
   font-size: 21px;
@@ -34,12 +42,20 @@
   color: @black;
 }
 
+.social {
+  margin-bottom: 47px;
+
+  @media @tablet {
+    margin-bottom: 0;
+  }
+}
+
 .social__list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
 }
@@ -66,8 +82,8 @@
 
 .copyright__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: auto;
   color: @black;
   text-decoration: none;
