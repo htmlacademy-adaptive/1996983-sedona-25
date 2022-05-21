@@ -29,8 +29,25 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding: 26px 0 28px;
+  padding: 18px 0 28px;
   text-transform: uppercase;
+}
+
+.modal__footer-button {
+  width: 180px;
+  margin: 0 auto;
+
+  @media @tablet {
+    width: 272px;
+  }
+
+  &--special {
+    width: 280px;
+
+    @media @tablet {
+      width: 458px;
+    }
+  }
 }
 
 .modal--success .modal__wrapper {

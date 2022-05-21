@@ -5,9 +5,10 @@
 .intro__triangle {
   position: absolute;
   width: 100%;
-  bottom: -25px;
-  z-index: 5;
+  bottom: -35px;
+  z-index: 1;
   right: 0;
+  height: 37px;
 
   @media @tablet {
     display: none;
@@ -16,7 +17,7 @@
 
 .intro__header {
   margin: 0 auto;
-  padding: 32px 6.25% 30px;
+  padding: 37px 6.25% 20px;
 
   @media @tablet {
     padding: 47px 0 57px;
@@ -54,39 +55,49 @@
     }
 
     @media @desktop {
-      padding-top: 123px;
-      padding-bottom: 66px;
+      padding-top: 118px;
+      padding-bottom: 68px;
     }
   }
 }
 
 .intro__title {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: @font-color-heading;
-  padding: 0 10px 22px 5px;
+  padding: 0 10px 38px 5px;
 
   @media @tablet {
     max-width: 450px;
-    font-size: 18px;
-    padding: 0 10px 29px 10px;
+    font-size: 20px;
+    padding: 0 0 29px 0;
 
     @media @desktop {
       font-size: 21px;
     }
   }
 
+  &--photo {
+    font-size: 21px;
+
+    @media @tablet {
+      font-size: 30px;
+    }
+  }
+
   &--form {
+    font-size: 18px;
     padding: 0 10px 25px 5px;
 
     @media @tablet {
+      font-size: 30px;
       padding: 0 11px 23px 10px;
     }
 
     @media @desktop {
-      padding: 0 11px 36px 10px;
+      padding: 0 11px 32px 10px;
     }
   }
 }

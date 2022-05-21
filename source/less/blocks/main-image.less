@@ -10,9 +10,11 @@
   }
 
   &--small {
-    padding-top: 85px;
+    width: 229px;
+    padding-top: 50px;
 
     @media @tablet {
+      width: 456px;
       padding-top: 95px;
     }
 
@@ -24,13 +26,14 @@
 
 .main-image {
   position: relative;
-  width: auto;
-  min-height: 214px;
+  width: 100%;
+  min-height: 158px;
   margin: 0 auto;
   background-color: @bg-color-back;
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/back-mobile.jpg");
+  background-size: 765px auto;
 
   &--index {
     min-height: 389px;
@@ -56,11 +59,16 @@
   }
 
   @media @desktop {
+    min-height: 296px;
     background-image: url("../img/back-desktop.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
+    }
+
+    &--index {
+      min-height: 518px;
     }
   }
 }
