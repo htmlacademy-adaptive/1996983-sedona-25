@@ -16,7 +16,7 @@
         <a class="page-header__logo">
         <img class="page-header__logo" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона"></a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--off" type="button">
+        <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         </button>
           <div class="main-nav__wrapper">
@@ -65,6 +65,11 @@
           </div>
           <header class="content-item__image">
           <picture>
+            <source media="(min-width: 1200px)" srcset="img/image-city-desktop.webp 1x, img/image-city-desktop@2x.webp 2x"
+              type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/image-city-tablet.webp 1x, img/image-city-tablet@2x.webp 2x"
+              type="image/webp">
+            <source srcset="img/image-city-mobile.webp 1x, img/image-city-mobile@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1200px)"
               srcset="img/image-city-desktop.jpg 1x, img/image-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -137,7 +142,7 @@
               </div>
               <div class="advantages__item no-content-item">
                 <header class="no-content-item__header">
-                  <h3 class="content-item__title">Красивая дорога</h3>
+                  <h3 class="content-item__title">Красивая <br> дорога</h3>
                     <p class="content-item__number">— №4 —</p>
                     <p class="content-item__text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
                 </header>
