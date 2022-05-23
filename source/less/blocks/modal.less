@@ -1,12 +1,35 @@
 .modal {
   position: fixed;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   background-color: @white;
   display: none;
   z-index: 11;
+
+  &--error {
+    bottom: 667px;
+
+    @media @tablet {
+      bottom: 342px;
+    }
+
+    @media @desktop {
+      bottom: 403px;
+    }
+  }
+
+  &--success {
+    bottom: 348px;
+  }
+
+  @media @tablet {
+    bottom: 463px;
+  }
+
+  @media @desktop {
+    bottom: 502px;
+  }
 }
 
 .modal--error .modal__wrapper {
