@@ -23,7 +23,7 @@
     align-items: center;
     margin: 0 auto;
     width: 86%;
-    max-width: 976px;
+    max-width: 966px;
   }
 }
 
@@ -32,6 +32,8 @@
 
   @media @tablet {
     margin: 0;
+    padding-top: 8px;
+    margin-left: 5px;
   }
 }
 
@@ -47,6 +49,14 @@
 
   @media @tablet {
     margin-bottom: 0;
+  }
+}
+
+.social__item {
+  margin-left: 5px;
+
+  &:nth-child(1) {
+    margin-left: 0;
   }
 }
 
@@ -67,7 +77,6 @@
   min-height: 48px;
   width: 48px;
   background-color: @bg-color-button;
-  margin-left: 6px;
   fill: @white;
 
   &:hover {
@@ -102,5 +111,5 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding-right: 11px;
+  padding-right: 9px;
 }
