@@ -9,6 +9,10 @@
     <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180х180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="css/style.min.css" type="text/css" as="style">
+    <link rel="preload" href="js/menu.min.js" type="text/js" as="script">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
   </head>
   <body class="page__body">
     <div class="page-border">
@@ -63,7 +67,7 @@
               <p class="content-item__text">Седона не аттракцион&nbsp;для туристов, там течет&nbsp;своя жизнь</p>
             </header>
           </div>
-          <header class="content-item__image">
+          <header class="content-item-image">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/image-city-desktop.webp 1x, img/image-city-desktop@2x.webp 2x"
               type="image/webp">
@@ -74,12 +78,12 @@
               srcset="img/image-city-desktop.jpg 1x, img/image-city-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/image-city-tablet.jpg 1x, img/image-city-tablet@2x.jpg 2x">
-            <img class="content__image" width="320" height="260" loading="lazy" src="img/image-city-mobile.jpg" srcset="img/image-city-mobile@2x.jpg 2x"
+            <img class="content-item-photo" width="320" height="260" loading="lazy" src="img/image-city-mobile.jpg" srcset="img/image-city-mobile@2x.jpg 2x"
             alt="Вид на город Седона">
           </picture>
           </header>
         </div>
-          <ul class="content-item__city-list city-list">
+          <ul class="city-list">
             <li class="city-list__item">
               <div class="city-list__item-title">
               <svg class="city-list__item-icon" width="40" height="40" viewBox="0 0 40 40">
@@ -116,7 +120,7 @@
                 <p class="content-item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </header>
             </div>
-            <header class="content-item__image">
+            <header class="content-item-image">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/image-bridge-desktop.webp 1x, img/image-bridge-desktop@2x.webp 2x"
                 type="image/webp">
@@ -127,27 +131,27 @@
                 srcset="img/image-bridge-desktop.jpg 1x, img/image-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="img/image-bridge-tablet.jpg 1x, img/image-bridge-tablet@2x.jpg 2x">
-              <img class="content__image" width="320" height="260" loading="lazy" src="img/image-bridge-mobile.jpg"
+              <img class="content-item-photo" width="320" height="260" loading="lazy" src="img/image-bridge-mobile.jpg"
                 srcset="img/image-bridge-mobile@2x.jpg 2x" alt="Вид на мост дьявола">
             </picture>
             </header>
           </div>
             <div class="advantages__wrapper advantages__wrapper--content">
-              <div class="advantages__item no-content-item">
+              <div class="advantages__item content-item no-content-item">
                 <header class="no-content-item__header">
                   <h3 class="content-item__title">Небольшая площадь</h3>
                     <p class="content-item__number">— №3 —</p>
                     <p class="content-item__text">Все интересные места находятся очень близко</p>
                 </header>
               </div>
-              <div class="advantages__item no-content-item">
+              <div class="advantages__item content-item no-content-item">
                 <header class="no-content-item__header">
                   <h3 class="content-item__title">Красивая <br> дорога</h3>
                     <p class="content-item__number">— №4 —</p>
                     <p class="content-item__text">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
                 </header>
                   </div>
-              <div class="advantages__item no-content-item">
+              <div class="advantages__item content-item no-content-item">
                 <header class="no-content-item__header">
                   <h3 class="content-item__title">Мало <br> туристов</h3>
                     <p class="content-item__number">— №5 —</p>
@@ -174,7 +178,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="visit">
-          <a class="page-footer__visit" href="#">#visitsedona</a>
+          <a class="visit-hashtag" href="#">#visitsedona</a>
         </div>
         <div class="page-footer__social social">
           <span class="visually-hidden">Давайте дружить!</span>

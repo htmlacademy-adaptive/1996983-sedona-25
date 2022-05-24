@@ -24,7 +24,6 @@
   }
 }
 
-
 .photo__description {
   width: 280px;
   margin: 0 auto;
@@ -112,6 +111,10 @@
   cursor: pointer;
   fill: @black;
   opacity: 0.25;
+
+  &:focus {
+    outline: 2px solid @black;
+  }
 
   @media @desktop {
     fill: @white;

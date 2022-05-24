@@ -304,8 +304,8 @@
   border-bottom: 4px solid @font-color-base;
 }
 
-.form-feedback__label-checkbox:hover::before {
-  background-color: @bg-color-checkbox--hover;
+.form-feedback__checkbox:focus + .form-feedback__label-checkbox::before {
+  outline: 2px solid @black;
 }
 
 .form-feedback__label-checkbox:active::before {
@@ -314,6 +314,10 @@
 
 .form-feedback__label-checkbox:active::after {
   opacity: 0.3;
+}
+
+.form-feedback__label-checkbox:hover::before {
+  background-color: @bg-color-checkbox--hover;
 }
 
 .form-feedback__checkbox:checked + .form-feedback__label-checkbox::after,
@@ -361,8 +365,8 @@
   background-color: @font-color-base;
 }
 
-.form-feedback__label-radio:hover::before {
-  background-color: @bg-color-checkbox--hover;
+.form-feedback__radio:focus + .form-feedback__label-radio::before {
+  outline: 2px solid @black;
 }
 
 .form-feedback__label-radio:active::before {
@@ -371,6 +375,10 @@
 
 .form-feedback__label-radio:active::after {
   opacity: 0.3;
+}
+
+.form-feedback__label-radio:hover::before {
+  background-color: @bg-color-checkbox--hover;
 }
 
 .form-feedback__input-text {
@@ -501,7 +509,22 @@
 }
 
 .form-feedback__input-text--emotions {
+  box-sizing: border-box;
+  margin: 0 auto;
   font-style: bold;
   font-size: 18px;
   line-height: 30px;
+  min-height: 150px;
+  border: none;
+  height: 117px;
+  width: auto;
+  resize: none;
+
+  @media @tablet {
+    width: 648px;
+  }
+
+  @media @desktop {
+    width: 768px;
+  }
 }

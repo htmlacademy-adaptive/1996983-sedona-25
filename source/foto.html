@@ -9,6 +9,10 @@
   <link rel="icon" href="img/favicons/icon.svg" type="img/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180х180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" type="text/css" as="style">
+  <link rel="preload" href="js/menu.min.js" type="text/js" as="script">
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
   </head>
   <body class="page__body">
     <div class="page-border">
@@ -58,6 +62,7 @@
           <div class="photo-wrapper">
             <ul class="photo-box">
               <li class="photo__description photo__description--big">
+              <a class="photo__link" href="#">
               <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop.webp 1x, img/photo-sunset-desktop@2x.webp 2x"
                 type="image/webp">
@@ -68,6 +73,7 @@
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
                 <img class="photo__image"  width="280" height="280" src="./img/photo-sunset-mobile.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Народные просторы">
               </picture>
+              </a>
               <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Неродные просторы</p>
@@ -85,6 +91,7 @@
                 </div>
               </li>
               <li class="photo__description">
+              <a class="photo__link" href="#">
               <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop.webp 1x, img/photo-cactus-desktop@2x.webp 2x"
                 type="image/webp">
@@ -95,6 +102,7 @@
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
                 <img class="photo__image"  width="280" height="280" src="./img/photo-cactus-mobile.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
               </picture>
+              </a>
               <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Местная растительность</p>
@@ -112,6 +120,7 @@
                 </div>
               </li>
               <li class="photo__description">
+              <a class="photo__link" href="#">
               <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop.webp 1x, img/photo-roads-desktop@2x.webp 2x"
                 type="image/webp">
@@ -122,6 +131,7 @@
               <source media="(min-width: 768px)" srcset="img/photo-roads-tablet.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
                 <img class="photo__image"  width="280" height="280" src="./img/photo-roads-mobile.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
               </picture>
+              </a>
               <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Дорога на север</p>
@@ -139,6 +149,7 @@
                 </div>
               </li>
               <li class="photo__description">
+              <a class="photo__link" href="#">
               <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x"
                 type="image/webp">
@@ -149,6 +160,7 @@
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
                 <img class="photo__image"  width="280" height="280" src="./img/photo-bridge.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
               </picture>
+              </a>
               <div class="photo__comment">
                 <div class="photo__text">
                   <p class="photo__title">Мост дьявола</p>
@@ -176,6 +188,7 @@
             </p>
           </header>
           <div class="video__video-pleer">
+            <a class="video__embed" href="#">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x" type="image/webp">
@@ -184,13 +197,14 @@
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="./img/video-mobile.jpg"  width="280" height="177" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
             </picture>
+            </a>
           </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="visit">
-          <a class="page-footer__visit" href="#">#visitsedona</a>
+          <a class="visit-hashtag" href="#">#visitsedona</a>
         </div>
         <div class="page-footer__social social">
           <span class="visually-hidden">Давайте дружить!</span>

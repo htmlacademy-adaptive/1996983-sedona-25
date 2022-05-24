@@ -69,6 +69,7 @@
   padding: 0;
   padding-bottom: 16px;
   text-align: start;
+  color: @black;
 
   @media @tablet {
     font-size: 21px;
@@ -88,20 +89,20 @@
   text-align: start;
   padding-left: 47px;
 
-  & br {
-    display: none;
-  }
-
   @media @tablet {
     padding: 0 15px 16px;
     text-align: center;
-
-    & br {
-      display: block;
-    }
   }
 
   @media @desktop {
     padding: 0 55px 20px;
+  }
+}
+
+.city-list__text br {
+  display: none;
+
+  @media @tablet {
+    display: block;
   }
 }
