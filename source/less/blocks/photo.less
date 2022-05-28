@@ -1,4 +1,4 @@
-.photo-wrapper {
+.photo__wrapper {
   margin: 0 auto;
 
   @media @tablet {
@@ -10,7 +10,7 @@
   }
 }
 
-.photo-box {
+.photo__box {
   margin: 0 auto;
   padding: 0;
 
@@ -27,7 +27,7 @@
 .photo__description {
   width: 280px;
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 26px;
   padding-bottom: 25px;
   list-style-type: none;
   border-bottom: solid 1px @border-color-photo;
@@ -59,12 +59,12 @@
 }
 
 .photo__comment {
-  padding: 10px 0 0;
+  padding: 14px 0 0;
 
   @media @tablet {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 22px 15px 18px;
     background-color: @border-color-photo;
   }
 
@@ -76,6 +76,7 @@
     color: @white;
     width: 100%;
     box-sizing: border-box;
+    padding: 15;
   }
 }
 
@@ -86,6 +87,10 @@
   color: @font-color-heading;
   text-align: start;
 
+  @media @tablet {
+    padding-left: 6px;
+  }
+
   @media @desktop {
     color: @white;
   }
@@ -95,11 +100,23 @@
   margin: 0;
   text-transform: none;
   text-align: start;
+
+  @media @tablet {
+    padding-left: 6px;
+  }
 }
 
 .photo__likesum {
-  padding-top: 4px;
+  padding-top: 10px;
   text-align: start;
+
+  @media @tablet {
+    padding-top: 5px;
+  }
+
+  @media @desktop {
+    padding-top: 10px;
+  }
 }
 
 .photo__like {
